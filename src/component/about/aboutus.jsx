@@ -34,8 +34,8 @@ const AboutUs = () => {
             <h2>Meet the Team</h2>
             <div className="team">
                     <Member h3={"Daksh Umakant Chaudhari"} p={"Lead Developer"} src={Daksh} />
-                    <Member h3={"Ridhdhi Ghanshyambhai Jogani"} p={"Chief Marketing Officer"} src={Chopper}/>
-                    <Member h3={"Savan Kirtibhai Kansagara"} p={"Developer"} src={Vinit} />        
+                    <Member h3={"Lipi Shaileshbhai Chaudhari"} p={"Digital marketer and Graphics designer"} src={Chopper}/>
+                    <Member h3={"Vinit Kansara"} p={"Chief Marketing Officer"} src={Vinit} />        
             </div>
        </div> 
     </div>
