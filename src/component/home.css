@@ -1,0 +1,35 @@
+.home {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  padding: 2rem;
+}
+
+.home-header {
+  background-color: #0c100c;
+  color: white;
+  /* padding: 2rem; */
+}
+
+.home-header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.home-header p {
+  font-size: 1.25rem;
+}
+
+.home-gallery {
+  margin: 2rem 0;
+}
+
+.home-gallery h2 {
+  font-size: 1.75rem;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(25rem, 1fr));
+  gap: 10rem;
+  margin-top: 1rem;
+}

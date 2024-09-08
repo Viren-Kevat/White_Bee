@@ -1,0 +1,112 @@
+#root {
+  width: 100%;
+  margin: 2rem auto;
+  padding: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 1.6rem; /* Equivalent to 16px if the base is 10px */
+  display: flex;
+  flex-direction: column;
+}
+html {
+  font-size: 16px; /* Default */
+}
+
+/* or to adjust globally */
+html {
+  font-size: 62.5%; /* Sets 1rem = 10px, easier for rem calculations */
+}
+main {
+  flex-grow: 1;
+}
+
+.header {
+  position: relative;
+  z-index: 5;
+}
+
+@media (max-width: 768px) {
+  #root {
+    max-width: 100%;
+    padding: 1rem;
+  }
+
+  .basebx2 {
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+  }
+
+  .mainp,
+  .mainp2 {
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+}
+
+@media (max-width: 480px) {
+  #root {
+    padding: 0.5rem;
+  }
+
+  .basebx2 {
+    margin: 0.25rem;
+  }
+  .mainservice {
+    display: flex;
+  }
+  .mainp,
+  .mainp2 {
+    margin: 0.25rem 0;
+  }
+}
+:root {
+  --background-color: #121212;
+  --primary-text-color: #e0e0e0;
+  --secondary-text-color: #b0b0b0;
+  --accent-color: #4ff31d;
+  --link-color: #03dac6;
+  --border-color: #333333;
+  --error-color: #cf6679;
+}
+
+body {
+  background-color: var(--background-color);
+  color: var(--primary-text-color);
+  font-family: Arial, sans-serif;
+}
+
+a {
+  color: var(--link-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  background-color: var(--link-color);
+  color: var(--background-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  color: #e0e0e0;
+}
+
+button:hover {
+  background-color: var(--accent-color);
+  color: #121212;
+}
+
+hr {
+  border: 1px solid var(--border-color);
+}
+
+.error {
+  color: var(--error-color);
+}

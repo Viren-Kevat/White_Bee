@@ -1,0 +1,32 @@
+.header {
+  background-color: #423f3f;
+  padding: 0.625rem; /* 10px */
+  text-align: center;
+}
+
+.header h1 {
+  color: white;
+  margin: 0;
+}
+
+.header nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0 3rem 0 0;
+  display: flex;
+  justify-content: end;
+}
+
+.header nav ul li {
+  display: inline;
+  margin: 0 0.9375rem; /* 15px */
+}
+
+.header nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.header nav ul li a:hover {
+  text-decoration: underline;
+}
