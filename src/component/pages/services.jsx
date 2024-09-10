@@ -2,6 +2,9 @@ import React from 'react';
 import './services.css';
 import Img from "./serviceparaimg.jsx";
 import Servicesparabx from "./serviceparabx.jsx";
+import Serv1 from "../../img/service_1.png"
+import Serv2 from "../../img/service_2.png"
+
 
 function Services() {
     return (
@@ -15,13 +18,13 @@ function Services() {
                         p={"Upload a picture of your crops and let our AI-powered tool analyze their health. Whether it’s soil moisture, disease detection, or nutrient imbalance, our system provides insights to help you manage your crops effectively. Get real-time feedback and improve your yield with smart, data-driven decisions."} 
                     />
                     <Img 
-                        url={"https://i0.wp.com/geopard.tech/wp-content/uploads/2021/12/Crop-Diseases_-Types-Causes-and-Symptoms-2-min.jpg?resize=1024%2C555&ssl=1"} 
+                        url={Serv1} 
                     />
                 </div>
                 <li>Agro Consultancy</li>
                 <div className="one">
                     <Img 
-                        url={"https://www.interestingfacts.org/wp-content/uploads/2021/02/ffoy5Jw3ouuPcPrhq7ytgNKpEQkiODLD1613756514.jpg"} 
+                        url={Serv2} 
                     />
                     <Servicesparabx 
                         h1={"Personalized Agro Consultancy Services"} 

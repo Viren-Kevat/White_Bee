@@ -1,11 +1,11 @@
 import React from 'react';
-import Imgbox from './imgbox';
+import Imgbox from '../basic/imgbox';
 import './home.css';
-import { ImageSlider } from '.';
-import image1 from '../img/img2.jpg';
-import image3 from'../img/img3.jpg';
-import image2 from '../img/img4.jpg';
-import image4 from '../img/img1.jpg'; // Replace with your image paths
+import { ImageSlider } from '..';
+import image1 from '../../img/img1.jpg';
+import image3 from'../../img/img3.jpg';
+import image2 from '../../img/img4.jpg';
+import image4 from '../../img/img1.jpg'; // Replace with your image paths
 
 function Home() {
     return (

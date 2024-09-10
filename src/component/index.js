@@ -1,9 +1,9 @@
-export { default as Header } from "./header.jsx";
+export { default as Header } from "./basic/header.jsx";
 export { default as AboutUs } from "../component/about/aboutus.jsx";
-export { default as Footer } from "./footer.jsx";
-export { default as Home } from "./home.jsx";
-export { default as Services } from "./services.jsx";
+export { default as Footer } from "./basic/footer.jsx";
+export { default as Home } from "./pages/home.jsx";
+export { default as Services } from "./pages/services.jsx";
 export { default as ContactUs } from "./about/contactus.jsx";
-export { default as ImageSlider } from "./image_slider.jsx";
+export { default as ImageSlider } from "./basic/image_slider.jsx";
 export { default as SignIn } from "./about/signin.jsx";
-export { default as ScrollToTop } from "./scrolltop.jsx";
+export { default as ScrollToTop } from "./basic/scrolltop.jsx";

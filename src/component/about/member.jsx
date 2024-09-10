@@ -7,7 +7,7 @@ import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { Link } from "react-router-dom";
-import ShareModal from "../sharemodel";
+import ShareModal from "../basic/sharemodel.jsx";
 const member =({h3,p,src,url})=>{
  
     return(
