@@ -1,13 +1,14 @@
 .contact-us {
   font-family: Arial, sans-serif;
   padding: 2rem;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   margin: auto;
   text-align: center;
 }
 
 .contact-us h1 {
-  /* font-size: 2rem; */
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 
@@ -25,7 +26,7 @@
 .form-group textarea {
   width: 100%;
   padding: 0.75rem;
-  /* font-size: 1rem; */
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
@@ -37,7 +38,7 @@
 
 button {
   padding: 0.75rem 1.5rem;
-  /* font-size: 1rem; */
+  font-size: 1rem;
   color: white;
   background-color: #4caf50;
   border: none;
@@ -51,6 +52,57 @@ button:hover {
 
 .submit-status {
   margin-top: 1rem;
-  /* font-size: 1.2rem; */
+  font-size: 1.2rem;
   color: green;
+}
+
+@media (max-width: 768px) {
+  .contact-us {
+    padding: 1rem;
+  }
+
+  .contact-us h1 {
+    font-size: 1.5rem;
+  }
+
+  .form-group input,
+  .form-group textarea {
+    padding: 0.6rem;
+    font-size: 0.9rem;
+  }
+
+  button {
+    padding: 0.6rem 1.2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-us {
+    padding: 0.5rem;
+  }
+  form {
+    height: 50rem;
+  }
+  .contact-us h1 {
+    font-size: 3.2rem;
+  }
+  .contact-us > p {
+    margin: 0 0 5rem 0;
+  }
+  .form-group input,
+  .form-group textarea {
+    padding: 0.5rem;
+    font-size: 0.8rem;
+    width: 80%;
+  }
+
+  button {
+    padding: 0.5rem 1rem;
+    font-size: 0.8rem;
+  }
+
+  .submit-status {
+    font-size: 1rem;
+  }
 }

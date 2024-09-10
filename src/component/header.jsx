@@ -1,22 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import './header.css';
-import AccountCircleIcon from '@mui/icons-material/AccountCircle';
-
+import MenuIcon from '@mui/icons-material/Menu';
+import CloseIcon from '@mui/icons-material/Close';
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsOpen(!isOpen);
+    };
+
     return (
         <header className="header">
-            {/* <h1>Agriculture Website</h1> */}
-            <nav>
+             <div className="logo">
+                <h1>White Bee</h1>
+            </div>
+            <nav className={`nav-menu ${isOpen ? 'open' : ''}`}>
                 <ul>
-                    <li><Link to="/">Home</Link></li>
-                    <li><Link to="/services">Services</Link></li>
-                    <li><Link to="/about">About</Link></li>
-                    <li><Link to="/contactus">Contact Us</Link></li>
-                    <li><Link to="/signin" ><AccountCircleIcon sx={{fontSize:25 }}/></Link></li>
+                    <li><Link to="/" onClick={toggleMenu}>Home</Link></li>
+                    <li><Link to="/services" onClick={toggleMenu}>Services</Link></li>
+                    <li><Link to="/about" onClick={toggleMenu}>About</Link></li>
+                    <li><Link to="/contactus" onClick={toggleMenu}>Contact Us</Link></li>
+                    <li><Link to="/signin" onClick={toggleMenu}>Sign In</Link></li>
                 </ul>
             </nav>
+            <div className="menu-icon" onClick={toggleMenu}>
+                {isOpen ? <CloseIcon /> : <MenuIcon />}
+            </div>
         </header>
     );
 }

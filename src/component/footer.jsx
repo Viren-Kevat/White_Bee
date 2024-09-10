@@ -47,12 +47,6 @@ const Footer = () => {
             Follow Us
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "center", gap: 1 }}>
-            <IconButton href="https://www.facebook.com/profile.php?id=100070137104593" sx={{ color: "#fff"}}>
-              <Facebook sx={{fontSize: 30}}/>
-            </IconButton>
-            <IconButton href="https://x.com/viren0210" sx={{ color: "#fff" }}>
-              <XIcon sx={{fontSize: 30}}/>
-            </IconButton>
             <IconButton href="https://www.instagram.com/_http.viren/" sx={{ color: "#fff" }}>
               <Instagram sx={{fontSize: 30}}/>
             </IconButton>
@@ -66,7 +60,7 @@ const Footer = () => {
       {/* Footer Bottom Section */}
       <Box sx={{ mt: 4, textAlign: "center", borderTop: "1px solid #555", pt: 2 }}>
         <Typography variant="body2" sx={{fontSize:"1.5rem"}}>
-          &copy; {new Date().getFullYear()} Team 7.
+          &copy; {new Date().getFullYear()} White Bee.
         </Typography>
       </Box>
     </Box>

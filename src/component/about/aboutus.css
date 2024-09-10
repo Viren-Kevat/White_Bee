@@ -19,7 +19,6 @@
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
-  /* height: 10rem; */
 }
 
 .about-hero::after {
@@ -43,7 +42,7 @@
 }
 
 .about-hero h1 {
-  font-size: 1.5rem;
+  font-size: 2rem;
   margin: 0;
 }
 
@@ -64,6 +63,7 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 @media (max-width: 768px) {
@@ -80,21 +80,32 @@
   }
 
   .about-hero h1 {
-    font-size: 1.2rem;
+    font-size: 1.8rem;
   }
 
   .about-hero p {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 
   .about-section h2 {
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+    gap: 6rem;
   }
 }
 
 @media (max-width: 480px) {
+  .about-container {
+    padding: 0.5rem;
+  }
+
   .about-hero {
     padding: 0.5rem;
+    background-position: top;
   }
 
   .textcontainerabut {
@@ -102,26 +113,21 @@
   }
 
   .about-hero h1 {
-    font-size: 2rem;
+    font-size: 1.6rem;
   }
 
   .about-hero p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
   .about-section h2 {
-    font-size: 1.5rem;
+    font-size: 2.2rem;
+    margin: 2rem 0 2rem 0;
   }
 
   .team {
     flex-direction: column;
     align-items: center;
-    height: 110rem;
-    justify-content: space-between;
+    gap: 6rem;
   }
 }
-
-/* .about {
-  padding: 1.25rem; 
-  text-align: center;
-} */

@@ -27,6 +27,7 @@ function ContactUs() {
     return (
         <div className="contact-us">
             <h1>Contact Us</h1>
+            <p>If you have any query,feel free to reach out us!</p>
             <form onSubmit={handleSubmit}>
                 <div className="form-group">
                     <label htmlFor="name">Name</label>
