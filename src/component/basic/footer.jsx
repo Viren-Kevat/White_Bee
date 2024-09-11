@@ -47,10 +47,10 @@ const Footer = () => {
             Follow Us
           </Typography>
           <Box sx={{ display: "flex", justifyContent: "center", gap: 1 }}>
-            <IconButton href="https://www.instagram.com/_http.viren/" sx={{ color: "#fff" }}>
+            <IconButton href="https://www.instagram.com/_.white_bee_/" sx={{ color: "#fff" }}>
               <Instagram sx={{fontSize: 30}}/>
             </IconButton>
-            <IconButton href="https://www.linkedin.com/in/viren-kevat/" sx={{ color: "#fff" }}>
+            <IconButton href="https://www.linkedin.com/in/daksh-chaudhari-699a8b259/?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" sx={{ color: "#fff" }}>
               <LinkedIn sx={{fontSize: 30}}/>
             </IconButton>
           </Box>
